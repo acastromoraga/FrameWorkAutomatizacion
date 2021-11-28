@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Pruebas Trello">
+	<listeners>
+	<listener
+			class-name="frameWorkAutomatizacionA_Castro.automatizacion.Listeners">
+		</listener>
+	</listeners>
+
+	<test thread-count="5" name="Test login correcto">
+		<classes>
+		
+			<class
+				name="frameWorkAutomatizacionA_Castro.automatizacion.LoginCorrecto" >
+				<methods>
+				<include name="Navegacion_Pag_Trello"/>
+				<include name="crearTablero"></include>
+				<include name="crearlista"></include>
+				<include name="agregarTarjeta"></include>
+				<include name="agregarPropiedades"/>
+				<include name="addDescripTarj"></include>
+				<include name="addEtiqueta"></include>
+				<include name="selectdate"></include>
+				<include name="adjuntarImagen"></include>
+				<include name="addComentario"></include>
+				<include name="moverTarjeta"></include>
+				<include name="eliminarTablero"></include>
+				</methods>
+				</class>
+		</classes>
+
+	</test> <!-- Test -->
+<!-- 	<test thread-count="5" name="Test login incorrecto"> -->
+<!-- 		<classes> -->
+<!-- 			<class -->
+<!-- 				name="frameWorkAutomatizacionA_Castro.automatizacion.LoginIncorrecto" /> -->
+
+
+
+
+<!-- 		</classes> -->
+
+<!-- 	</test> Test -->
+</suite> <!-- Suite -->
